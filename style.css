@@ -69,7 +69,7 @@ button {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2rem;
   margin: 10%;
   text-align: center;
 }
@@ -78,9 +78,13 @@ th {
   height: 2em;
   text-align: center;
   width: 13em;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   background-color: #d5bdaf;
   color: white;
+  background-color: #457B9D;
+  border-radius: 5px;
+ 
 }
 
 td {
