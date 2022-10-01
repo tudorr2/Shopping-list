@@ -16,7 +16,6 @@ itemInput.addEventListener("keyup", (e) => {
   }
 });
 
-// ADD ITEMS TO TABLE
 
 function addItemToTable() {
   let itemFromForm = itemInput.value;
@@ -77,20 +76,6 @@ function linethroughEntry(entryId) {
   renderTable();
 }
 
-//SORTING TABLE
-
-// function sortItems(input1, input2, key) {
-//     const a = input1[key];
-//     const b = input2[key];
-
-//     if (a < b) {
-//         return -1;
-//     }
-//     if (a > b) {
-//         return 1;
-//     }
-//     return 0;
-// }
 
 function sortItems(input1, input2, key) {
   const a = input1[key].toLowerCase();
@@ -99,7 +84,6 @@ function sortItems(input1, input2, key) {
   return a > b ? 1 : -1;
 }
 
-//ASCENDING
 
 ascSortButton.addEventListener("click", function (event) {
   items.sort((item1, item2) => {
@@ -108,7 +92,6 @@ ascSortButton.addEventListener("click", function (event) {
   renderTable();
 });
 
-//DESCENDING
 
 descSortButton.addEventListener("click", function (event) {
   items.sort((item1, item2) => {
